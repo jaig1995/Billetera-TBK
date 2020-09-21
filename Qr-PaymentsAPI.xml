@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5c3212e2-6f93-4cea-81e8-362197cecfdc" activeEnvironment="Default" name="QRPaymentsAPI" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="5cc6f59e-b0b7-435b-a399-408586cc01fb" wadlVersion="http://wadl.dev.java.net/2009/02" name="QRPaymentsAPI" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>This is a sample Hello API</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://api.example.com</con:endpoint><con:endpoint>http://lbroudoux-OSX.local:8089/</con:endpoint></con:endpoints><con:resource name="ObtenerDetalleTransaccion" path="/qr-payments" id="137db4ce-c54f-4373-af1f-867b1adc6096"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="ObtenerDetalleTransaccion" id="c3b20b14-81c2-4ec9-abc2-cfb0c6025115" method="GET"><con:description/><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>422 401 503</con:status><con:params/><con:element xmlns:hel="http://lbroudoux-OSX.local/v1/hello">hel:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="200" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="123456789023454310000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="AutorizacionTransaccion" path="/qr-payments/authorize" id="137db4ce-c54f-4373-af1f-867b1adc6096"><con:settings/><con:parameters/><con:method name="AutorizacionTransaccion" id="c3b20b14-81c2-4ec9-abc2-cfb0c6025115" method="POST"><con:description>Get a new greeting message
+Get a new greeting message</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>422 401 503</con:status><con:params/><con:element xmlns:hel="http://lbroudoux-OSX.local/v1/hello">hel:Fault</con:element></con:representation><con:request name="Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="200" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://api.example.com</con:endpoint><con:request>{
+	"meta": {
+	"_rqDateTime": "2020-02-10T09:30Z",
+	"_rsLength": 1,
+	"_iv": "6edgw283d13"
+	},
+	"data": {
+	"attributes": {
+	"id": "123456789023454310000",
+	"userId": "1234567891011121400",
+	"notifyURL": "https://internal.banco.cl/callback",
+	"payment": {
+	"cardNumber": "1234567812345678",
+	"cardType": "DEBIT",
+	"expirationDate": "12/2021",
+	"cavv": "964",
+	"vci": "147",
+	"eci": "258",
+	"cvv": "931"
+	},
+	"userSelection": {
+	"paymentType": "VC",
+	"fees": 12
+	}
+	}
+	}
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="RechazarTransaccion" path="/qr-payments/reject" id="137db4ce-c54f-4373-af1f-867b1adc6096"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="RechazarTransaccion" id="c3b20b14-81c2-4ec9-abc2-cfb0c6025115" method="DELETE"><con:description>Get a new greeting message
+Get a new greeting message</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>422 401 503</con:status><con:params/><con:element xmlns:hel="http://lbroudoux-OSX.local/v1/hello">hel:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="200" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://api.example.com</con:endpoint><con:request>
+</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="83710371301" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="62af16cd-3796-4dbf-b0f0-3416db326b01" name="QRPaymentsAPI TestSuite"><con:description>TestSuite generated for REST Service [Hello API]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="bc82b283-b5bc-422c-b7c7-04bcaac4270b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ObtenerDetalleTransaccion TestCase" searchProperties="true"><con:description/><con:settings/><con:testStep type="restrequest" name="ObtenerDetalleTransaccion-200 Request" id="a6bbe0a8-413a-42d8-810c-b5cad34eea2b"><con:settings/><con:config service="QRPaymentsAPI" resourcePath="/qr-payments" methodName="ObtenerDetalleTransaccion" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ObtenerDetalleTransaccion-200 Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="200" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089/qr-payments?id=123456789023454310000</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="329eba81-cd27-4522-a5ca-a0e1cafc7ec4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7394cfdf-b3c9-4d34-ae8b-110e41a2b9d8" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello David !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d6fe616f-5223-4d24-9f6b-23043cfcc147" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="123456789023454310000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ObtenerDetalleTransaccion-401 Request" id="ac1c9a11-6e65-425f-b9aa-7a20bbf09e41"><con:settings/><con:config service="QRPaymentsAPI" methodName="ObtenerDetalleTransaccion" resourcePath="/qr-payments" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ObtenerDetalleTransaccion-401 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="401" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments?id=123456789023454310000</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="123456789023454310000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ObtenerDetalleTransaccion-422 Request" id="52f22703-e51e-4537-8a66-915d835c57d3"><con:settings/><con:config service="QRPaymentsAPI" methodName="ObtenerDetalleTransaccion" resourcePath="/qr-payments" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ObtenerDetalleTransaccion-422 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="422" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments?id=123456789023454310000</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="123456789023454310000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ObtenerDetalleTransaccion-503 Request" id="51564dae-760f-4afd-873c-74b1e2329492"><con:settings/><con:config service="QRPaymentsAPI" methodName="ObtenerDetalleTransaccion" resourcePath="/qr-payments" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ObtenerDetalleTransaccion-503 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="503" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments?id=123456789023454310000</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="123456789023454310000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="83e96714-7931-4675-ab50-28a71e88d997" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AutorizacionTransaccion TestCase" searchProperties="true"><con:description/><con:settings/><con:testStep type="restrequest" name="AutorizacionTransaccion-422 Request" id="a1582011-819f-488c-a7da-19f8a2547983"><con:settings/><con:config service="QRPaymentsAPI" methodName="AutorizacionTransaccion" resourcePath="/qr-payments/authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AutorizacionTransaccion-422 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="422" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments/authorize</con:endpoint><con:request>{
+    "meta": {
+        "_rqDateTime": "2020-02-10T09:30Z",
+        "_rsLength": 1,
+        "_iv": "6edgw283d13"
+    },
+    "data": {
+        "attributes": {
+            "id": "123456789023454310000",
+            "userId": "1234567891011121400",
+            "notifyURL": "https://internal.banco.cl/callback",
+            "payment": {
+                "cardNumber": "1234567812345678",
+                "cardType": "DEBIT",
+                "expirationDate": "12/2021",
+                "cavv": "964",
+                "vci": "147",
+                "eci": "258",
+                "cvv": "931"
+            },
+            "userSelection": {
+                "paymentType": "VC",
+                "fees": 12
+            }
+        }
+    }
+}</con:request><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="AutorizacionTransaccion-503 Request" id="fb89fbec-93ea-46bf-8632-f4d7b5f79d7c"><con:settings/><con:config service="QRPaymentsAPI" methodName="AutorizacionTransaccion" resourcePath="/qr-payments/authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AutorizacionTransaccion-503 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="503" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments/authorize</con:endpoint><con:request>{
+    "meta": {
+        "_rqDateTime": "2020-02-10T09:30Z",
+        "_rsLength": 1,
+        "_iv": "6edgw283d13"
+    },
+    "data": {
+        "attributes": {
+            "id": "123456789023454310000",
+            "userId": "1234567891011121400",
+            "notifyURL": "https://internal.banco.cl/callback",
+            "payment": {
+                "cardNumber": "1234567812345678",
+                "cardType": "DEBIT",
+                "expirationDate": "12/2021",
+                "cavv": "964",
+                "vci": "147",
+                "eci": "258",
+                "cvv": "931"
+            },
+            "userSelection": {
+                "paymentType": "VC",
+                "fees": 12
+            }
+        }
+    }
+}</con:request><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="AutorizacionTransaccion-201 Request" id="8eb6971c-1661-40b8-9faf-cb68c343fc53"><con:settings/><con:config service="QRPaymentsAPI" methodName="AutorizacionTransaccion" resourcePath="/qr-payments/authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AutorizacionTransaccion-201 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="201" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments/authorize</con:endpoint><con:request>{
+    "meta": {
+        "_rqDateTime": "2020-02-10T09:30Z",
+        "_rsLength": 1,
+        "_iv": "6edgw283d13"
+    },
+    "data": {
+        "attributes": {
+            "id": "123456789023454310000",
+            "userId": "1234567891011121400",
+            "notifyURL": "https://internal.banco.cl/callback",
+            "payment": {
+                "cardNumber": "1234567812345678",
+                "cardType": "DEBIT",
+                "expirationDate": "12/2021",
+                "cavv": "964",
+                "vci": "147",
+                "eci": "258",
+                "cvv": "931"
+            },
+            "userSelection": {
+                "paymentType": "VC",
+                "fees": 12
+            }
+        }
+    }
+}</con:request><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="AutorizacionTransaccion-401 Request" id="09a34972-1e46-4a2e-a5f8-87d3101a7c67"><con:settings/><con:config service="QRPaymentsAPI" methodName="AutorizacionTransaccion" resourcePath="/qr-payments/authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AutorizacionTransaccion-401 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="401" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-payments/authorize</con:endpoint><con:request>{
+    "meta": {
+        "_rqDateTime": "2020-02-10T09:30Z",
+        "_rsLength": 1,
+        "_iv": "6edgw283d13"
+    },
+    "data": {
+        "attributes": {
+            "id": "123456789023454310000",
+            "userId": "1234567891011121400",
+            "notifyURL": "https://internal.banco.cl/callback",
+            "payment": {
+                "cardNumber": "1234567812345678",
+                "cardType": "DEBIT",
+                "expirationDate": "12/2021",
+                "cavv": "964",
+                "vci": "147",
+                "eci": "258",
+                "cvv": "931"
+            },
+            "userSelection": {
+                "paymentType": "VC",
+                "fees": 12
+            }
+        }
+    }
+}</con:request><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f43636f-d92d-4fd4-b37c-3c652d5482e5" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello Gavin !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="250cc4b9-2626-42a2-a2bf-15e8fef7ba53" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RechazarTransaccion" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="RechazarTransaccion-204 Request" id="eeb34470-1b66-4902-a711-e37041b8d61d"><con:settings/><con:config service="QRPaymentsAPI" resourcePath="/qr-payments/reject" methodName="RechazarTransaccion" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="RechazarTransaccion-204 Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="204" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089/qr-payments/reject</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="329eba81-cd27-4522-a5ca-a0e1cafc7ec4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7394cfdf-b3c9-4d34-ae8b-110e41a2b9d8" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello David !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d6fe616f-5223-4d24-9f6b-23043cfcc147" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="372640173" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="RechazarTransaccion-503 Request" id="4a15442e-ecdb-4bd0-94cf-a3560940458f"><con:settings/><con:config service="QRPaymentsAPI" resourcePath="/qr-payments/reject" methodName="RechazarTransaccion" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="RechazarTransaccion-503 Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="503" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089/qr-payments/reject</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="329eba81-cd27-4522-a5ca-a0e1cafc7ec4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7394cfdf-b3c9-4d34-ae8b-110e41a2b9d8" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello David !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d6fe616f-5223-4d24-9f6b-23043cfcc147" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="372640173" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="RechazarTransaccion-422 Request" id="83574a67-4097-4df8-b6f3-e73de3e7f749"><con:settings/><con:config service="QRPaymentsAPI" resourcePath="/qr-payments/reject" methodName="RechazarTransaccion" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="RechazarTransaccion-422 Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="422" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089/qr-payments/reject</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="329eba81-cd27-4522-a5ca-a0e1cafc7ec4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7394cfdf-b3c9-4d34-ae8b-110e41a2b9d8" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello David !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d6fe616f-5223-4d24-9f6b-23043cfcc147" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="372640173" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="RechazarTransaccion-401 Request" id="7aa8afb1-a95f-413c-9076-e9e3d541e613"><con:settings/><con:config service="QRPaymentsAPI" resourcePath="/qr-payments/reject" methodName="RechazarTransaccion" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="RechazarTransaccion-401 Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="401" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089/qr-payments/reject</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="329eba81-cd27-4522-a5ca-a0e1cafc7ec4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="7394cfdf-b3c9-4d34-ae8b-110e41a2b9d8" name="JsonPath Match"><con:configuration><path>greeting</path><content>Hello David !</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d6fe616f-5223-4d24-9f6b-23043cfcc147" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="372640173" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="107a3cf2-b296-435c-bcd8-130f932965fa" port="8091" path="/" host="lbroudoux-OSX.local" name="QRPaymentsAPI Mock" docroot=""><con:settings/><con:properties><con:property><con:name>version</con:name><con:value>1.0.3</con:value></con:property></con:properties><con:restMockAction name="/qr-payments" method="GET" resourcePath="/qr-payments" id="45ced2ad-a1a9-40f5-a65e-c14bd4501c32"><con:settings/><con:defaultResponse>Unknwon Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>
+def xMock = mockRequest.request.getHeader("X-Mock")
+
+if(!xMock){
+	return "ObtenerDetalleTransaccion-200 Response"
+}
+
+switch( xMock ) {
+	case "200":
+		return "ObtenerDetalleTransaccion-200 Response"
+	break
+	case "401":
+		return "ObtenerDetalleTransaccion-401 Response"
+	break
+	case "422":
+		return "ObtenerDetalleTransaccion-422 Response"
+	break
+	case "503":
+		return "ObtenerDetalleTransaccion-503 Response"
+	break
+	default:
+		return "ObtenerDetalleTransaccion-503 Response"
+}</con:dispatchPath><con:response name="ObtenerDetalleTransaccion-200 Response" id="c6f2e949-26eb-4ed7-959e-f1ff59526bf8" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "3104213-2",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "links": {
+        "self": "https://api.apic.dev1.tbk.cl/transbank/sandbox/qr-payments?id=123456789023454310000"
+    },
+    "data": {
+        "id": "123456789023454310000",
+        "type": "qrPayment",
+        "attributes": {
+            "isReceipt": true,
+            "commerceName": "COMERCIO {{ randomString(5) }}",
+            "rut": "95.185.234-6",
+            "address": "Marín 328, Santiago",
+            "authorizationCode": "{{ randomInt(100000000, 999999999) }",
+            "operationNumber": "{{ randomInt(100000000, 999999999) }}",
+            "cardType": "CREDIT",
+            "fees": "{{ randomInt(0, 20) }}",
+            "date": "2020-01-17T09:30:40",
+            "amount": "{{ randomInt(100, 10000) }}",
+            "tipAmount":  "{{ randomInt(100, 10000) }}",
+            "totalAmount":  "{{ randomInt(100, 10000) }}",
+            "currency": "CLP"
+        }
+    }
+}</con:responseContent></con:response><con:response name="ObtenerDetalleTransaccion-401 Response" id="ec02e3bf-05a4-4ed3-9c5a-73508c34bfbb" httpResponseStatus="401" mediaType="application/json"><con:settings/><con:responseContent>{
+    "httpCode": "401",
+    "httpMessage": "Unauthorized",
+    "moreInformation": "Invalid client id or secret."
+}</con:responseContent></con:response><con:response name="ObtenerDetalleTransaccion-422 Response" id="a13a59fa-7bc0-481a-bdef-720d7786f7de" httpResponseStatus="422" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "3104213-2",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "422",
+            "title": "simple-code invalido",
+            "detail": "el parametro simple-code no cumple con el formato esperado",
+            "source": {
+                "pointer": "simple-code"
+            }
+        },
+        {
+            "status": "422",
+            "title": "amount invalido",
+            "detail": "el parametro amount debe ser númerico",
+            "source": {
+                "pointer": "amount"
+            }
+        }
+    ]
+}</con:responseContent></con:response><con:response name="ObtenerDetalleTransaccion-503 Response" id="573ab29b-542c-4c1f-a28b-9401f0a18ef4" httpResponseStatus="503" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "3104213-2",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "503",
+            "title": "Servicio interno no disponible",
+            "detail": "El servicio interno no se encuentra en funcionamiento."
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="/qr-payments/authorize" method="POST" resourcePath="/qr-payments/authorize" id="3b50ca59-558b-4cc3-9f4d-45637070081a"><con:settings/><con:defaultResponse>AutorizacionTransaccion-200 Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>def xMock = mockRequest.request.getHeader("X-Mock")
+
+
+if(!xMock){
+	return "AutorizacionTransaccion-201 Response"
+}
+
+switch( xMock ) {
+	case "201":
+		return "AutorizacionTransaccion-201 Response"
+	break
+	case "401":
+		return "AutorizacionTransaccion-401 Response"
+	break
+	case "422":
+		return "AutorizacionTransaccion-422 Response"
+	break
+	case "503":
+		return "AutorizacionTransaccion-503 Response"
+	break
+	default:
+		return "AutorizacionTransaccion-503 Response"
+}</con:dispatchPath><con:response name="AutorizacionTransaccion-201 Response" id="8f83b7a9-c550-4072-85ff-8f75c4fc2acf" httpResponseStatus="201" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "links": {
+        "related": "https://api.apic.dev1.tbk.cl/transbank/sandbox/qr-payments?id=123456789023454310000"
+        },
+    "data": {
+        "id": "{{ randomInt(100000000, 999999999) }}",
+        "type": "qrPayment",
+        "attributes": {
+            "date": "{{ now(dd/MM/yyyy HH:mm:ss) }}"
+        }
+    }
+}</con:responseContent></con:response><con:response name="AutorizacionTransaccion-401 Response" id="815f97d0-7d70-4264-91ac-d72ce254df41" httpResponseStatus="401" mediaType="application/json"><con:settings/><con:responseContent>{
+	"httpCode": "401",
+	"httpMessage": "Unauthorized",
+	"moreInformation": "Invalid client id or secret."
+}</con:responseContent></con:response><con:response name="AutorizacionTransaccion-422 Response" id="65dbb522-e1cd-4c59-b61d-08e8f5e70235" httpResponseStatus="422" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "422",
+            "title": "data invalida",
+            "detail": "la data enviada no es una data valida",
+            "source": {
+                "pointer": "data"
+            }
+        }
+    ]
+}</con:responseContent></con:response><con:response name="AutorizacionTransaccion-503 Response" id="c6e39942-3687-422f-be71-0e6078a63f34" httpResponseStatus="503" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "503",
+            "title": "Servicio interno no disponible",
+            "detail": "El servicio interno no se encuentra en funcionamiento."
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="/qr-payments/reject" method="DELETE" resourcePath="/qr-payments/reject" id="1945f3b8-037d-4a36-ab99-179fe01ba39b"><con:settings/><con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">RechazarTransaccion-503 Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>def xMock = mockRequest.request.getHeader("X-Mock")
+
+if(!xMock){
+	return "RechazarTransaccion-204 Response"
+}
+
+switch( xMock ) {
+	case "204":
+		return "RechazarTransaccion-204 Response"
+	break
+	case "401":
+		return "RechazarTransaccion-401 Response"
+	break
+	case "422":
+		return "RechazarTransaccion-422 Response"
+	break
+	case "503":
+		return "RechazarTransaccion-503 Response"
+	break
+	default:
+		return "RechazarTransaccion-503 Response"
+}</con:dispatchPath><con:response name="RechazarTransaccion-204 Response" id="d7619c51-f100-4315-b05c-5693f617a3fb" httpResponseStatus="204" mediaType="application/json"><con:settings/><con:responseContent>
+</con:responseContent></con:response><con:response name="RechazarTransaccion-401 Response" id="37d7dc5b-23fc-4202-a80f-1b8a518e4d71" httpResponseStatus="401" mediaType="application/json"><con:settings/><con:responseContent>{
+    "httpCode": "401",
+    "httpMessage": "Unauthorized",
+    "moreInformation": "Invalid client id or secret."
+}</con:responseContent></con:response><con:response name="RechazarTransaccion-503 Response" id="f8330b92-93b1-446c-82c5-c1d0869649ea" httpResponseStatus="503" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "503",
+            "title": "Servicio interno no disponible",
+            "detail": "El servicio interno no se encuentra en funcionamiento."
+        }
+    ]
+}</con:responseContent></con:response><con:response name="RechazarTransaccion-422 Response" id="3203a6c9-ddde-4a58-ba01-f297e5a8e2c0" httpResponseStatus="422" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "422",
+            "title": "simple-code invalido",
+            "detail": "el parametro simple-code no cumple con el formato esperado",
+            "source": {
+                "pointer": "simple-code"
+            }
+        },
+        {
+            "status": "422",
+            "title": "amount invalido",
+            "detail": "el parametro amount debe ser númerico",
+            "source": {
+                "pointer": "amount"
+            }
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

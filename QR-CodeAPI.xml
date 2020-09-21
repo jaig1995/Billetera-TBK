@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5c3212e2-6f93-4cea-81e8-362197cecfdc" activeEnvironment="Default" name="QRCodesAPI" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="5cc6f59e-b0b7-435b-a399-408586cc01fb" wadlVersion="http://wadl.dev.java.net/2009/02" name="QRCodesAPI" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description/><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://api.example.com</con:endpoint><con:endpoint>http://lbroudoux-OSX.local:8089/</con:endpoint></con:endpoints><con:resource name="ValidarCodigoQr" path="/qr-codes" id="137db4ce-c54f-4373-af1f-867b1adc6096"><con:settings/><con:parameters><con:parameter><con:name>codeKey</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>simpleCode</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>userId</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>amount</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>tipAmount</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>currency</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="ValidarCodigoQr" id="c3b20b14-81c2-4ec9-abc2-cfb0c6025115" method="GET"><con:description>Get a new greeting message
+Get a new greeting message</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>422 401 503</con:status><con:params/><con:element xmlns:hel="http://lbroudoux-OSX.local/v1/hello">hel:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="200" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://api.example.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codeKey" value="67b6f297-3484-494e-823b-a53b398e717c"/>
+  <con:entry key="amount" value="1237.50"/>
+  <con:entry key="tipAmount" value="123.75"/>
+  <con:entry key="currency" value="CLP"/>
+  <con:entry key="simpleCode" value="fefac6f7-597b"/>
+  <con:entry key="userId" value="99f148c5-8210-4c14-8cac-05f259541c5e"/>
+</con:parameters><con:parameterOrder><con:entry>codeKey</con:entry><con:entry>simpleCode</con:entry><con:entry>userId</con:entry><con:entry>amount</con:entry><con:entry>tipAmount</con:entry><con:entry>currency</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="62af16cd-3796-4dbf-b0f0-3416db326b01" name="QRCodesAPI TestSuite"><con:description>TestSuite generated for REST Service [Hello API]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="bc82b283-b5bc-422c-b7c7-04bcaac4270b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ValidarCodigoQr TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [/hello] located at [/hello]</con:description><con:settings/><con:testStep type="restrequest" name="ValidarCodigoQR-200 Request" id="a6bbe0a8-413a-42d8-810c-b5cad34eea2b"><con:settings/><con:config service="QRCodesAPI" resourcePath="/qr-codes" methodName="ValidarCodigoQr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ValidarCodigoQR-200 Request" id="8d9f58a8-45a7-4c3e-a9d6-aeb6334329c8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="200" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8089/qr-codes</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="329eba81-cd27-4522-a5ca-a0e1cafc7ec4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d6fe616f-5223-4d24-9f6b-23043cfcc147" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codeKey" value=""/>
+  <con:entry key="amount" value=""/>
+  <con:entry key="tipAmount" value=""/>
+  <con:entry key="currency" value=""/>
+  <con:entry key="simpleCode" value=""/>
+  <con:entry key="userId" value=""/>
+</con:parameters><con:parameterOrder><con:entry>codeKey</con:entry><con:entry>simpleCode</con:entry><con:entry>userId</con:entry><con:entry>amount</con:entry><con:entry>tipAmount</con:entry><con:entry>currency</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ValidarCodigoQR-401 Request" id="ac1c9a11-6e65-425f-b9aa-7a20bbf09e41"><con:settings/><con:config service="QRCodesAPI" methodName="ValidarCodigoQr" resourcePath="/qr-codes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ValidarCodigoQR-401 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="401" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-codes</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>401</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codeKey" value=""/>
+  <con:entry key="amount" value=""/>
+  <con:entry key="tipAmount" value=""/>
+  <con:entry key="currency" value=""/>
+  <con:entry key="simpleCode" value=""/>
+  <con:entry key="userId" value=""/>
+</con:parameters><con:parameterOrder><con:entry>codeKey</con:entry><con:entry>simpleCode</con:entry><con:entry>userId</con:entry><con:entry>amount</con:entry><con:entry>tipAmount</con:entry><con:entry>currency</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ValidarCodigoQR-422 Request" id="52f22703-e51e-4537-8a66-915d835c57d3"><con:settings/><con:config service="QRCodesAPI" methodName="ValidarCodigoQr" resourcePath="/qr-codes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ValidarCodigoQR-422 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="422" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-codes</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9d065067-859d-4d06-a673-5511144f0f92" name="Valid HTTP Status Codes"><con:configuration><codes>422</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codeKey" value=""/>
+  <con:entry key="amount" value=""/>
+  <con:entry key="tipAmount" value=""/>
+  <con:entry key="currency" value=""/>
+  <con:entry key="simpleCode" value=""/>
+  <con:entry key="userId" value=""/>
+</con:parameters><con:parameterOrder><con:entry>codeKey</con:entry><con:entry>simpleCode</con:entry><con:entry>userId</con:entry><con:entry>amount</con:entry><con:entry>tipAmount</con:entry><con:entry>currency</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ValidarCodigoQR-503 Request" id="51564dae-760f-4afd-873c-74b1e2329492"><con:settings/><con:config service="QRCodesAPI" methodName="ValidarCodigoQr" resourcePath="/qr-codes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ValidarCodigoQR-503 Request" id="c848f8c4-581a-4f86-89a0-fb105e27d79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Mock" value="503" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/qr-codes</con:endpoint><con:request/><con:originalUri>http://lbroudoux-OSX.local/v1/hello</con:originalUri><con:assertion type="Response SLA Assertion" id="b159c170-d09c-4123-9a6b-d18d2a517aa7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codeKey" value=""/>
+  <con:entry key="amount" value=""/>
+  <con:entry key="tipAmount" value=""/>
+  <con:entry key="currency" value=""/>
+  <con:entry key="simpleCode" value=""/>
+  <con:entry key="userId" value=""/>
+</con:parameters><con:parameterOrder><con:entry>codeKey</con:entry><con:entry>simpleCode</con:entry><con:entry>userId</con:entry><con:entry>amount</con:entry><con:entry>tipAmount</con:entry><con:entry>currency</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="107a3cf2-b296-435c-bcd8-130f932965fa" port="8089" path="/" host="lbroudoux-OSX.local" name="QRCodesAPI Mock"><con:settings/><con:properties><con:property><con:name>version</con:name><con:value>1.0.3</con:value></con:property></con:properties><con:restMockAction name="/qr-codes" method="GET" resourcePath="/qr-codes" id="45ced2ad-a1a9-40f5-a65e-c14bd4501c32"><con:settings/><con:defaultResponse>Unknwon Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>def xMock = mockRequest.request.getHeader("X-Mock")
+
+if(!xMock){
+	return "ValidarCodigoQR-200 Response"
+}
+
+switch( xMock ) {
+	case "200":
+		return "ValidarCodigoQR-200 Response"
+	break
+	case "401":
+		return "ValidarCodigoQR-401 Response"
+	break
+	case "422":
+		return "ValidarCodigoQR-422 Response"
+	break
+	case "503":
+		return "ValidarCodigoQR-503 Response"
+	break
+	default:
+		return "ValidarCodigoQR-503 Response"
+}
+
+
+</con:dispatchPath><con:response name="ValidarCodigoQR-200 Response" id="c6f2e949-26eb-4ed7-959e-f1ff59526bf8" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "links": {
+        "self": "https://api.apic.dev1.tbk.cl/transbank/sandbox/qrCodes?codeKey=946103610364u44y2842&amp;date=2020-10-20&amp;walletUUID=1234567891011121400"
+    },
+    "data": {
+        "attributes": {
+            "transaction": {
+                "id": "{{ randomInt(100000000, 999999999) }}",
+                "timeRemaining": "{{ randomInt(250, 310) }}",
+                "amount": "{{ randomInt(90, 99999) }}",
+                "tip": "{{ randomInt(5, 999) }}",
+                "totalAmount": "{{ randomInt(90, 99999) }}",
+                "currency": "CLP"
+            },
+            "commerce": {
+                "name": "Emporio {{ randomString(5) }}",
+                "code": "{{ randomString() }}",
+                "logoURL": "https://web1qa.test.transbank.cl:8443/imagingservlet/LogoServlet?commerceId=597038358200",
+                "paymentTypes": [
+                    {
+                        "code": "VN",
+                        "minFees": "{{ randomInt(1, 32) }}",
+                        "maxFees": "{{ randomInt(1, 32) }}",
+                        "description": "Venta Normal"
+                    },
+                    {
+                        "code": "SI",
+                        "minFees": "{{ randomInt(1, 32) }}",
+                        "maxFees": "{{ randomInt(1, 32) }}",
+                        "description": "Tres Cuotas Sin Interes"
+                    },
+                    {
+                        "code": "VI",
+                        "minFees": "{{ randomInt(1, 32) }}",
+                        "maxFees": "{{ randomInt(1, 32) }}",
+                        "description": "Venta Cuotas"
+                    }
+                ],
+                "brands": [
+                    "REDCOMPRA",
+                    "VISA",
+                    "MASTERCARD",
+                    "DINERS",
+                    "AMEX",
+                    "MAGNA"
+                ]
+            }
+        },
+        "id": "{{ randomInt(100000000, 999999999) }}",
+        "type": "qrCode"
+    }
+}</con:responseContent></con:response><con:response name="ValidarCodigoQR-401 Response" id="ec02e3bf-05a4-4ed3-9c5a-73508c34bfbb" httpResponseStatus="401" mediaType="application/json"><con:settings/><con:responseContent>{
+    "httpCode": "401",
+    "httpMessage": "Unauthorized",
+    "moreInformation": "Invalid client id or secret."
+}</con:responseContent></con:response><con:response name="ValidarCodigoQR-422 Response" id="a13a59fa-7bc0-481a-bdef-720d7786f7de" httpResponseStatus="422" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "422",
+            "title": "simple-code invalido",
+            "detail": "el parametro simple-code no cumple con el formato esperado",
+            "source": {
+                "pointer": "simple-code"
+            }
+        },
+        {
+            "status": "422",
+            "title": "amount invalido",
+            "detail": "el parametro amount debe ser númerico",
+            "source": {
+                "pointer": "amount"
+            }
+        }
+    ]
+}</con:responseContent></con:response><con:response name="ValidarCodigoQR-503 Response" id="573ab29b-542c-4c1f-a28b-9401f0a18ef4" httpResponseStatus="503" mediaType="application/json"><con:settings/><con:responseContent>{
+    "meta": {
+        "_msgId": "{{ randomString() }}",
+        "_version": "1.0.3",
+        "_rqDateTime": "{{ now(dd/MM/yyyy HH:mm:ss) }}",
+        "_clientId": "8303713-1",
+        "_transactionId": "{{ randomString() }}"
+    },
+    "errors": [
+        {
+            "status": "503",
+            "title": "Servicio interno no disponible",
+            "detail": "El servicio interno no se encuentra en funcionamiento."
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

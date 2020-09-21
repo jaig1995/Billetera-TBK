@@ -1,0 +1,6 @@
+<config>
+    <service uriBase="/MocksTBK/APIC/v1/QrCodes" internalPort="https://internal-wsmocksdev-server-a37781-pri-969383761.us-east-1.elb.amazonaws.com/rest/QRCodesAPI+Mock/1.0.3/qr-codes" />
+    <service uriBase="/MocksTBK/APIC/v1/QrPayments" internalPort="https://internal-wsmocksdev-server-a37781-pri-969383761.us-east-1.elb.amazonaws.com/rest/QRPaymentsAPI+Mock/1.0.3/qr-payments" />
+    <service uriBase="/MocksTBK/APIC/v1/QrPayments/Authorize" internalPort="https://internal-wsmocksdev-server-a37781-pri-969383761.us-east-1.elb.amazonaws.com/rest/QRPaymentsAPI+Mock/1.0.3/qr-payments/authorize" />
+    <service uriBase="/MocksTBK/APIC/v1/QrPayments/Reject" internalPort="https://internal-wsmocksdev-server-a37781-pri-969383761.us-east-1.elb.amazonaws.com/rest/QRPaymentsAPI+Mock/1.0.3/qr-payments/reject" />
+</config>
